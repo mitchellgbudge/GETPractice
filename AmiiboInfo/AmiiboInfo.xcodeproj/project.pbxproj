@@ -13,6 +13,7 @@
 		3DE16AE8231F695500309AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE16AE6231F695500309AD6 /* LaunchScreen.storyboard */; };
 		3DE16AF0231F6C4900309AD6 /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE16AEF231F6C4900309AD6 /* CharacterTableViewController.swift */; };
 		3DE16AF2231F6C5800309AD6 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE16AF1231F6C5800309AD6 /* CharacterDetailViewController.swift */; };
+		3DE16AF4231F6E1F00309AD6 /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE16AF3231F6E1F00309AD6 /* Amiibo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3DE16AE9231F695500309AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE16AEF231F6C4900309AD6 /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		3DE16AF1231F6C5800309AD6 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		3DE16AF3231F6E1F00309AD6 /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3DE16AE1231F695300309AD6 /* Main.storyboard */,
 				3DE16AEF231F6C4900309AD6 /* CharacterTableViewController.swift */,
 				3DE16AF1231F6C5800309AD6 /* CharacterDetailViewController.swift */,
+				3DE16AF3231F6E1F00309AD6 /* Amiibo.swift */,
 				3DE16AE4231F695500309AD6 /* Assets.xcassets */,
 				3DE16AE6231F695500309AD6 /* LaunchScreen.storyboard */,
 				3DE16AE9231F695500309AD6 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE16AF4231F6E1F00309AD6 /* Amiibo.swift in Sources */,
 				3DE16ADE231F695300309AD6 /* AppDelegate.swift in Sources */,
 				3DE16AF2231F6C5800309AD6 /* CharacterDetailViewController.swift in Sources */,
 				3DE16AF0231F6C4900309AD6 /* CharacterTableViewController.swift in Sources */,
