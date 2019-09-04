@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Character Table View Controller-->
         <scene sceneID="Gie-vR-k5r">
             <objects>
-                <tableViewController id="NQr-Jr-Unl" sceneMemberID="viewController">
+                <tableViewController id="NQr-Jr-Unl" customClass="CharacterTableViewController" customModule="AmiiboInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fhy-dq-cyq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
         <!--Character Name-->
         <scene sceneID="Uuo-66-WiY">
             <objects>
-                <viewController id="Kg0-Bl-HzZ" sceneMemberID="viewController">
+                <viewController id="Kg0-Bl-HzZ" customClass="CharacterDetailViewController" customModule="AmiiboInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ptp-FL-2mq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
