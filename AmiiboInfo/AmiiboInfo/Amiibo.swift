@@ -8,10 +8,6 @@
 
 import Foundation
 
-struct AmiiboResult: Codable {
-    let amiibo: [Amiibo]
-}
-
 struct Amiibo: Codable {
     let image: String
     let name: String

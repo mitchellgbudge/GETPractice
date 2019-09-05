@@ -8,9 +8,11 @@
 
 import Foundation
 
-var amiibos: [AmiiboResult] = []
+class APIController {
 
-func fetchAmiibos(completion: @escaping (Result<AmiiboResult, Error>) -> Void) {
+var amiibos: [Amiibo] = []
+
+func fetchAmiibos(completion: @escaping (Result<Amiibo, Error>) -> Void) {
     
     let baseURL = URL(string: "https://www.amiiboapi.com/api/amiibo/")!
     
@@ -31,8 +33,8 @@ func fetchAmiibos(completion: @escaping (Result<AmiiboResult, Error>) -> Void) {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             
-            let amiibo = try decoder.decode(AmiiboResult.self, from: data)
-            amiibos.append(amiibo)
+            let amiibo = try decoder.decode(Amiibo.self, from: data)
+            self.amiibos.append(amiibo)
         } catch {
             NSLog("Error decoding data to type Pokemon: \(error)")
             completion(.failure(error))
@@ -41,4 +43,4 @@ func fetchAmiibos(completion: @escaping (Result<AmiiboResult, Error>) -> Void) {
         }.resume()
 }
 
-
+}
