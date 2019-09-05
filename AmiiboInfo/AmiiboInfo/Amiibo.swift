@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Amiibo: Codable {
+struct Amiibo: Decodable {
     let image: String
     let name: String
 }
