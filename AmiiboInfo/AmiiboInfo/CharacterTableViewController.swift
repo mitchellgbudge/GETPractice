@@ -12,7 +12,7 @@ class CharacterTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        apiController.fetchAmiibos { (_) in
+        apiController.fetchAmiibos { (result) in
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

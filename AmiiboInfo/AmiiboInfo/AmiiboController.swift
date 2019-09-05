@@ -33,10 +33,10 @@ func fetchAmiibos(completion: @escaping (Result<Amiibo, Error>) -> Void) {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             
-            let amiibo = try decoder.decode(Amiibo.self, from: data)
-            self.amiibos.append(amiibo)
+            let amiiboResults = try decoder.decode(AmiiboResult.self, from: data)
+            print(amiiboResults)
         } catch {
-            NSLog("Error decoding data to type Pokemon: \(error)")
+            NSLog("Error decoding data to type Amiibo: \(error)")
             completion(.failure(error))
         }
         
