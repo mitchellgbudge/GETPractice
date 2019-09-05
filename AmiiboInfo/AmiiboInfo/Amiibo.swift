@@ -14,4 +14,5 @@ struct AmiiboResult: Codable {
 
 struct Amiibo: Codable {
     let name: String
+    let image: String
 }

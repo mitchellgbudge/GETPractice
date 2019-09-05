@@ -12,10 +12,8 @@ class CharacterTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        apiController.fetchAmiibos { (result) in
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+        apiController.fetchAmiibos { (_) in
+            self.tableView.reloadData()
         }
     }
     
@@ -31,7 +29,7 @@ class CharacterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AmiiboCell", for: indexPath)
         let amiibo = apiController.amiibos[indexPath.row]
-        cell.textLabel?.text = "foo"
+        cell.textLabel?.text = amiibo.name
         return cell
     }
 
