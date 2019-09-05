@@ -10,7 +10,7 @@ import Foundation
 
 class APIController {
 
-var amiibos: [Amiibo] = []
+var amiibos: [AmiiboResult] = []
 
 func fetchAmiibos(completion: @escaping (Result<Amiibo, Error>) -> Void) {
     
@@ -30,10 +30,7 @@ func fetchAmiibos(completion: @escaping (Result<Amiibo, Error>) -> Void) {
         }
         
         do {
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
-            let amiiboResults = try decoder.decode(AmiiboResult.self, from: data)
+            let amiiboResults = try JSONDecoder().decode(AmiiboResult.self, from: data)
             print(amiiboResults)
         } catch {
             NSLog("Error decoding data to type Amiibo: \(error)")

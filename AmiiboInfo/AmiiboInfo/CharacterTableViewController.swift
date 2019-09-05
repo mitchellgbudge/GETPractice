@@ -31,7 +31,7 @@ class CharacterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AmiiboCell", for: indexPath)
         let amiibo = apiController.amiibos[indexPath.row]
-        cell.textLabel?.text = amiibo.name
+        cell.textLabel?.text = "foo"
         return cell
     }
 

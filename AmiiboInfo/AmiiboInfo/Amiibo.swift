@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct AmiiboResult: Decodable {
+struct AmiiboResult: Codable {
     let amiibo: [Amiibo]
 }
 
-struct Amiibo: Decodable {
+struct Amiibo: Codable {
     let name: String
 }
