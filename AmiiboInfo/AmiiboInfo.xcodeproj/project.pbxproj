@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D12B3BC2328C0360012BADB /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12B3BB2328C0360012BADB /* Country.swift */; };
 		3DE16ADE231F695300309AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE16ADD231F695300309AD6 /* AppDelegate.swift */; };
 		3DE16AE3231F695300309AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE16AE1231F695300309AD6 /* Main.storyboard */; };
 		3DE16AE5231F695500309AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE16AE4231F695500309AD6 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D12B3BB2328C0360012BADB /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		3DE16ADA231F695300309AD6 /* AmiiboInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiiboInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE16ADD231F695300309AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE16AE2231F695300309AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				3DE16ADD231F695300309AD6 /* AppDelegate.swift */,
 				3DE16AE1231F695300309AD6 /* Main.storyboard */,
 				3DE16AF1231F6C5800309AD6 /* CharacterDetailViewController.swift */,
+				3D12B3BB2328C0360012BADB /* Country.swift */,
 				3DE16AF3231F6E1F00309AD6 /* Amiibo.swift */,
 				3DE16AF5231F6F0100309AD6 /* AmiiboController.swift */,
 				3DE16AE4231F695500309AD6 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				3DE16AF4231F6E1F00309AD6 /* Amiibo.swift in Sources */,
 				3DE16AF6231F6F0100309AD6 /* AmiiboController.swift in Sources */,
 				3DE16ADE231F695300309AD6 /* AppDelegate.swift in Sources */,
+				3D12B3BC2328C0360012BADB /* Country.swift in Sources */,
 				3DE16AF2231F6C5800309AD6 /* CharacterDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

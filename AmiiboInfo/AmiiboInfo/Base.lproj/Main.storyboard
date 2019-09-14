@@ -65,6 +65,7 @@
                     <navigationItem key="navigationItem" id="Keb-xs-WHG"/>
                     <connections>
                         <outlet property="imageView" destination="L9Q-s3-aEU" id="8SY-eq-9Kw"/>
+                        <outlet property="searchBar" destination="5EM-pA-oH3" id="eoD-8H-G0Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5E-LQ-XjC" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,17 +8,32 @@
 
 import UIKit
 
-class CharacterDetailViewController: UIViewController {
+class CharacterDetailViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    let apiController = APIController()
+    var amiibo: Amiibo? {
+        didSet {
+           updateViews()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        searchBar.delegate = self
     }
     
-
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        apiController.fetchAmiibos { (_) in
+            self.updateViews()
+        }
+    }
+    
+    func updateViews() {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
